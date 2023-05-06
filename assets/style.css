@@ -150,6 +150,7 @@ li a {
   padding: 30px;
 }
 .work .container .container-right a img:hover {
+  transition: ease 0.2s;
   box-shadow: 5px 5px 5px black;
 }
 .work .small-img img {
@@ -175,6 +176,7 @@ li a {
   margin-bottom: 30px;
 }
 .small-img img:hover {
+  transition: ease 0.2s;
   box-shadow: 5px 5px 5px black;
 }
 
