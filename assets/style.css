@@ -1,3 +1,4 @@
+/* Overall  */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,4 +6,235 @@
 }
 body {
   font-family: "DM Mono", monospace;
+  background-color: rgb(248, 242, 242);
+}
+h1 {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 3em;
+  transition: 0.5s;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+/* main header / Navbar  */
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  background-color: black;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 100px;
+}
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.main-nav ul li a {
+  position: relative;
+  transition: ease 0.5s;
+}
+.main-nav ul li a:hover {
+  color: rgba(245, 245, 245, 0.863);
+  transition: ease 0.5s;
+}
+.main-nav ul li a:hover::after {
+  content: "";
+  display: block;
+  border: 5px solid rgba(245, 245, 245, 0.863);
+  width: 50%;
+  position: absolute;
+  border-radius: 10px;
+  transition: ease 0.5s;
+}
+
+/* Main  */
+
+/* about section  */
+
+.about .container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 60px;
+  margin-bottom: 150px;
+}
+
+.about .container img {
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.about .container #container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 40%;
+  padding: 25px;
+}
+.about .container #container-right h2 {
+  font-size: 2em;
+  position: relative;
+}
+.about .container #container-right h2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 5px solid black;
+  width: 125%;
+  border-left: 20px solid black;
+  height: 120%;
+  left: -35px;
+  top: 1px;
+  border-radius: 5px;
+}
+.about .container #container-right p {
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 25px;
+}
+
+/* my work section  */
+
+.work .container {
+  display: flex;
+  justify-content: space-around;
+  height: 1250px;
+  margin-bottom: 100px;
+}
+.work .container #wrapper {
+  margin-left: 150px;
+  padding: 75px;
+}
+.work .container #wrapper h2 {
+  margin-top: 50px;
+  position: relative;
+  font-size: 2em;
+}
+.work .container #wrapper h2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-bottom: 5px solid black;
+  width: 125%;
+  border-left: 20px solid black;
+  height: 120%;
+  left: -35px;
+  top: 1px;
+  border-radius: 5px;
+}
+
+.work .container .container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.work .container .container-right h3 {
+  padding-top: 30px;
+}
+.work .container .container-right a img {
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.work .container .container-right a img:hover {
+  box-shadow: 5px 5px 5px black;
+}
+.work .small-img img {
+  margin-top: 50px;
+  width: 300px;
+}
+.smaller-images {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.small-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+
+.small-img img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.small-img img:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+/* footer  */
+footer {
+  display: flex;
+  margin-top: 100px;
+  background-color: black;
+  height: 600px;
+}
+footer form {
+  color: black;
+  padding: 20px;
+  display: flex;
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  align-items: center;
+}
+footer form label {
+  padding: 15px;
+}
+footer form input {
+  padding: 10px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+}
+footer form textarea {
+  margin: 15px;
+}
+.input-name {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.input-email {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.user-textarea {
+  display: flex;
+}
+.user-textarea #userInput {
+  width: 400px;
+  height: 170px;
+  border: 5px solid black;
+  border-radius: 10px;
+  font-size: 2em;
+}
+#contact input {
+  font-size: 1em;
+  width: 282px;
 }
