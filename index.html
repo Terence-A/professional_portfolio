@@ -15,94 +15,128 @@
     <title>Terence Arseneault Portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>Terence Arseneault</h1>
-      <nav>
+      <nav class="main-nav">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
-          <img src="./assets/img/photo.jfif" alt="" />
-          <h2>About Me</h2>
-          <p>
-            Hi! My name is Terence Arseneault and I am a Full Stack Web
-            Developer, currently attending UNB full stack coding boot camp.
-          </p>
-          <p>
-            My focus is on writing clean code. I specialize in HTML, CSS,
-            Javascript and Github.
-          </p>
+          <img
+            src="./assets/img/photo.jfif"
+            alt="image of Terence Arseneault"
+          />
+          <div id="container-right">
+            <h2>About Me</h2>
+            <p>
+              Hi! My name is Terence Arseneault and I am a Full Stack Web
+              Developer, currently attending UNB full stack coding boot camp.
+            </p>
+            <p>
+              My focus is on writing clean code. I specialize in HTML, CSS,
+              Javascript and Github.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="work">
+
+      <section class="work" id="work">
         <div class="container">
-          <h2>My Work</h2>
-          <img src="./assets/img/Challenge1.png" alt="" />
-          <h3>Challenge 1 Code Refactor</h3>
+          <div id="wrapper">
+            <h2>My Work</h2>
+          </div>
+          <div class="container-right">
+            <a
+              href="https://github.com/Terence-A/accessibilityStandardsChallengeRefactor"
+            >
+              <img
+                src="./assets/img/challenge-one.png"
+                alt="image of challenge one refactor site"
+              />
+            </a>
+            <h3>Challenge 1 Code Refactor</h3>
+          </div>
         </div>
-        <div class="small-img">
-          <!-- Ilya Pavlov from unsplash.com -->
-          <img
-            src="./assets/img/unsplash_one.jpg"
-            alt="image of code on computer screen"
-          />
-          <h3>Placeholder One Image</h3>
-        </div>
-        <div class="small-img">
-          <!-- ThisisEngineering RAEng from unsplash.com  -->
-          <img
-            src="./assets/img/unsplash_two.jpg"
-            alt="image of computer screens"
-          />
-          <h3>Placeholder Two Image</h3>
-        </div>
-        <div class="small-img">
-          <!-- Fahim Muntashir from unsplash.com  -->
-          <img
-            src="./assets/img/unsplash_three.jpg"
-            alt="image of someone coding"
-          />
-          <h3>Placeholder Three Image</h3>
-        </div>
-        <div class="small-img">
-          <!-- Mohammad Rahmani from unsplash.com  -->
-          <img
-            src="./assets/img/unsplash_four.jpg"
-            alt="image of coffee mug with computer"
-          />
-          <h3>Placeholder Four Image</h3>
-        </div>
+
+        <section class="smaller-images">
+          <div class="small-img">
+            <!-- Ilya Pavlov from unsplash.com -->
+            <a href="#"
+              ><img
+                src="./assets/img/unsplash_one.jpg"
+                alt="image of code on computer screen"
+              />
+            </a>
+            <h3>Placeholder One Image</h3>
+          </div>
+          <div class="small-img">
+            <!-- ThisisEngineering RAEng from unsplash.com  -->
+            <a href="#"
+              ><img
+                src="./assets/img/unsplash_two.jpg"
+                alt="image of computer screens"
+              />
+            </a>
+            <h3>Placeholder Two Image</h3>
+          </div>
+          <div class="small-img">
+            <!-- Fahim Muntashir from unsplash.com  -->
+            <a href="#"
+              ><img
+                src="./assets/img/unsplash_three.jpg"
+                alt="image of someone coding"
+              />
+            </a>
+            <h3>Placeholder Three Image</h3>
+          </div>
+          <div class="small-img">
+            <!-- Mohammad Rahmani from unsplash.com  -->
+            <a href="#"
+              ><img
+                src="./assets/img/unsplash_four.jpg"
+                alt="image of coffee mug with computer"
+              />
+            </a>
+            <h3>Placeholder Four Image</h3>
+          </div>
+        </section>
       </section>
     </main>
-    <footer>
+    <footer id="contact">
       <form action="#">
-        <label for="userName">Name: </label>
-        <input
-          type="text"
-          id="userName"
-          name="userName"
-          placeholder="Your Name"
-        />
-        <label for="userEmail">Email: </label>
-        <input
-          type="email"
-          id="userEmail"
-          name="userEmail"
-          placeholder="Your Email"
-        />
-        <textarea
-          name="userInput"
-          id="userInput"
-          cols="30"
-          rows="10"
-          placeholder="Enter Text"
-        ></textarea>
+        <div class="input-name">
+          <label for="userName">Name: </label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="input-email">
+          <label for="userEmail">Email: </label>
+          <input
+            type="email"
+            id="userEmail"
+            name="userEmail"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="user-textarea">
+          <textarea
+            name="userInput"
+            id="userInput"
+            cols="30"
+            rows="10"
+            placeholder="Enter Text"
+          ></textarea>
+        </div>
       </form>
     </footer>
   </body>
