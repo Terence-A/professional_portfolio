@@ -233,6 +233,16 @@ footer form textarea {
 footer .submit-btn {
   text-align: center;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
 
 /* media queries Tablet  */
 
