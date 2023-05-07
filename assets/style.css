@@ -360,6 +360,9 @@ footer p {
   .main-nav ul li {
     padding: 10px;
   }
+  .main-nav ul li a:hover::after {
+    border: 2px solid rgba(245, 245, 245, 0.863);
+  }
 
   /* about section  */
   .about .container {
