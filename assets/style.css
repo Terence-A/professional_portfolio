@@ -44,13 +44,13 @@ li a {
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover {
-  color: rgba(245, 245, 245, 0.863);
+  color: rgba(209, 181, 181, 0.863);
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover::after {
   content: "";
   display: block;
-  border: 5px solid rgba(245, 245, 245, 0.863);
+  border: 5px solid rgba(209, 181, 181, 0.863);
   width: 50%;
   position: absolute;
   border-radius: 10px;
@@ -183,9 +183,9 @@ li a {
 /* footer  */
 footer {
   display: flex;
+  flex-direction: column;
   margin-top: 100px;
   background-color: black;
-  height: 500px;
 }
 footer form {
   display: flex;
@@ -200,10 +200,10 @@ footer form {
   align-items: center;
 }
 footer form label {
-  padding: 10px;
+  padding: 10px 0;
 }
 footer form input {
-  padding: 5px;
+  padding: 5px 0;
   width: 200px;
   border: 3px solid black;
   border-radius: 10px;
@@ -212,13 +212,12 @@ footer form textarea {
   margin: 15px;
 }
 .input-name {
-  padding: 10px;
+  padding: 10px 0;
   font-weight: bold;
   font-size: 1em;
 }
 .input-email {
-  padding: 10px;
-  /* margin-right: 5px; */
+  padding: 10px 0;
   font-weight: bold;
   font-size: 1em;
 }
@@ -233,10 +232,7 @@ footer form textarea {
 footer .submit-btn {
   text-align: center;
 }
-footer {
-  display: flex;
-  flex-direction: column;
-}
+
 footer h4 {
   text-align: center;
   font-size: 1.5em;
@@ -247,7 +243,7 @@ footer p {
   text-align: center;
   color: white;
   font-size: 1em;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* media queries Tablet  */
@@ -341,7 +337,14 @@ footer p {
   /* footer section  */
   footer form {
     width: 415px;
-  }
+}
+
+.user-textarea #userInput {
+  width: 300px;
+  height: 130px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 1.2em;
 }
 
 /* mobile */
@@ -361,7 +364,7 @@ footer p {
     padding: 10px;
   }
   .main-nav ul li a:hover::after {
-    border: 2px solid rgba(245, 245, 245, 0.863);
+    border: 2px solid rgba(209, 181, 181, 0.863);
   }
 
   /* about section  */
@@ -402,13 +405,29 @@ footer p {
   section .smaller-images .small-img a img {
     margin: 0;
   }
+
+  /* footer section  */
   footer form {
     width: 70%;
     height: 80%;
-    align-items: flex-start;
+    align-items: center;
+  }
+  footer .input-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 0;
+  }
+  footer .input-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding-bottom: 10px;
   }
   footer form .user-textarea {
-    width: 80%;
+    text-align: center;
   }
   .user-textarea #userInput {
     width: 80%;
@@ -418,6 +437,7 @@ footer p {
   }
   footer form .submit-btn {
     width: 75%;
+    margin-bottom: 10px;
   }
 
   /* small mobile  */
@@ -430,7 +450,7 @@ footer p {
       font-size: 10px;
     }
     .main-nav ul li a:hover::after {
-      border: 2px solid rgba(245, 245, 245, 0.863);
+      border: 2px solid rgba(209, 181, 181, 0.863);
     }
 
     /* work section  */
