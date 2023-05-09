@@ -44,13 +44,13 @@ li a {
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover {
-  color: rgba(209, 181, 181, 0.863);
+  color: rgba(226, 7, 7, 0.863);
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover::after {
   content: "";
   display: block;
-  border: 5px solid rgba(209, 181, 181, 0.863);
+  border: 5px solid rgba(226, 7, 7, 0.863);
   width: 50%;
   position: absolute;
   border-radius: 10px;
@@ -229,9 +229,6 @@ footer form textarea {
   border-radius: 10px;
   font-size: 1.3em;
 }
-footer .submit-btn {
-  text-align: center;
-}
 
 footer h4 {
   text-align: center;
@@ -244,6 +241,14 @@ footer p {
   color: white;
   font-size: 1em;
   margin: 20px 0;
+}
+footer .submit-btn input{
+  background-color: rgba(241, 35, 35, 0.836);
+  cursor: pointer;
+  text-align: center;
+}
+footer .submit-btn input:hover{
+  background-color: rgba(216, 42, 42, 0.63);
 }
 
 /* media queries Tablet  */
@@ -320,6 +325,9 @@ footer p {
   }
 
   /* work section  */
+  .work .container{
+    height: auto;
+  }
   .work .container .container-right a img {
     width: 99%;
     padding: 20px;
