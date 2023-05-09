@@ -40,17 +40,18 @@ li a {
   width: 400px;
 }
 .main-nav ul li a {
+  color: red;
   position: relative;
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover {
-  color: rgba(209, 181, 181, 0.863);
+  color: darkred;
   transition: ease 0.5s;
 }
 .main-nav ul li a:hover::after {
   content: "";
   display: block;
-  border: 5px solid rgba(209, 181, 181, 0.863);
+  border: 5px solid darkred;
   width: 50%;
   position: absolute;
   border-radius: 10px;
@@ -244,6 +245,14 @@ footer p {
   color: white;
   font-size: 1em;
   margin: 20px 0;
+}
+footer .submit-btn input{
+  background-color: red;
+}
+footer .submit-btn input:hover{
+  cursor: pointer;
+  background-color: darkred;
+  transition: .2s;
 }
 
 /* media queries Tablet  */
