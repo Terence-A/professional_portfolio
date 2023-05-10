@@ -84,10 +84,12 @@ li a {
   width: 40%;
   padding: 25px;
 }
+
 .about .container #container-right h2 {
   font-size: 2em;
   position: relative;
 }
+
 .about .container #container-right h2::after {
   position: absolute;
   content: "";
@@ -100,6 +102,7 @@ li a {
   top: 1px;
   border-radius: 5px;
 }
+
 .about .container #container-right p {
   font-size: 1.2em;
   text-align: center;
@@ -114,15 +117,18 @@ li a {
   height: 1250px;
   margin-bottom: 100px;
 }
+
 .work .container #wrapper {
   margin-left: 150px;
   padding-left: 75px;
 }
+
 .work .container #wrapper h2 {
   margin-top: 20px;
   position: relative;
   font-size: 2em;
 }
+
 .work .container #wrapper h2::after {
   position: absolute;
   content: "";
@@ -142,28 +148,29 @@ li a {
   justify-content: center;
   align-items: center;
 }
+
 .work .container .container-right h3 {
   padding-top: 30px;
 }
+
 .work .container .container-right a img {
   height: 100%;
   width: 100%;
   border-radius: 30px;
 }
+
 .work .container .container-right a img:hover {
   transition: ease 0.2s;
   box-shadow: 5px 5px 5px black;
 }
-.work .small-img img {
-  margin-top: 50px;
-  width: 300px;
-}
+
 .smaller-images {
   display: flex;
   justify-content: space-around;
   padding: 20px;
   flex-wrap: wrap;
 }
+
 .small-img {
   display: flex;
   flex-direction: column;
@@ -173,9 +180,12 @@ li a {
 }
 
 .small-img img {
+  margin-top: 50px;
+  width: 300px;
   border-radius: 20px;
   margin-bottom: 30px;
 }
+
 .small-img img:hover {
   transition: ease 0.2s;
   box-shadow: 5px 5px 5px black;
@@ -479,6 +489,18 @@ footer .submit-btn input:hover{
     .work .container .container-right h3 {
       text-align: center;
       padding: 0;
+    }
+  }
+  @media screen and (max-width: 240px){
+    footer .input-name{   
+      width: 150px;
+    }
+
+    footer .input-email{
+      width: 150px;
+    }
+    .user-textarea #userInput {
+      width: 110px;
     }
   }
 }
